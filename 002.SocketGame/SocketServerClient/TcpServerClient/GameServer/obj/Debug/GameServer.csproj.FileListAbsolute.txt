@@ -8,3 +8,13 @@ D:\MyGames\002.SocketGame\SocketServerClient\TcpServerClient\GameServer\bin\Debu
 D:\MyGames\002.SocketGame\SocketServerClient\TcpServerClient\GameServer\obj\Debug\GameServer.csprojResolveAssemblyReference.cache
 D:\MyGames\002.SocketGame\SocketServerClient\TcpServerClient\GameServer\obj\Debug\GameServer.exe
 D:\MyGames\002.SocketGame\SocketServerClient\TcpServerClient\GameServer\obj\Debug\GameServer.pdb
+D:\Game\GameProject\002.SocketGame\SocketServerClient\TcpServerClient\GameServer\bin\Debug\GameServer.exe.config
+D:\Game\GameProject\002.SocketGame\SocketServerClient\TcpServerClient\GameServer\obj\Debug\GameServer.exe
+D:\Game\GameProject\002.SocketGame\SocketServerClient\TcpServerClient\GameServer\obj\Debug\GameServer.pdb
+D:\Game\GameProject\002.SocketGame\SocketServerClient\TcpServerClient\GameServer\bin\Debug\GameServer.exe
+D:\Game\GameProject\002.SocketGame\SocketServerClient\TcpServerClient\GameServer\bin\Debug\GameServer.pdb
+D:\Game\GameProject\002.SocketGame\SocketServerClient\TcpServerClient\GameServer\bin\Debug\Common.dll
+D:\Game\GameProject\002.SocketGame\SocketServerClient\TcpServerClient\GameServer\bin\Debug\MySql.Data.dll
+D:\Game\GameProject\002.SocketGame\SocketServerClient\TcpServerClient\GameServer\bin\Debug\Common.pdb
+D:\Game\GameProject\002.SocketGame\SocketServerClient\TcpServerClient\GameServer\bin\Debug\MySql.Data.xml
+D:\Game\GameProject\002.SocketGame\SocketServerClient\TcpServerClient\GameServer\obj\Debug\GameServer.csprojResolveAssemblyReference.cache
