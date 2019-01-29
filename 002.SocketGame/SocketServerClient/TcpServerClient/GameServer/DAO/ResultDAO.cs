@@ -34,7 +34,6 @@ namespace GameServer.DAO
             }
             catch (Exception e)
             {
-                
                 Console.WriteLine("在GetResultByUserId时出现异常:" + e);
             }
             finally
