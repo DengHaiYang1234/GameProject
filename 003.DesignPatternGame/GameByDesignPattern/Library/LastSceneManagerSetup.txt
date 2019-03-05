@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenens/DMRunScene.unity
+- path: Assets/Scene/StateScenes/02MainMenuScene.unity
   isLoaded: 1
   isActive: 1

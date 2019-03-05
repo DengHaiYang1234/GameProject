@@ -3,30 +3,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-/*
-状态模式
-*/
-
-public class DM01State : MonoBehaviour
+public class DM01StateDesign : MonoBehaviour
 {
     private void Start()
     {
         Context context = new Context();
-
         context.SetState(new ConcreteStateA(context));
 
-        context.Handle(5);
-
-        context.Handle(20);
-
-        context.Handle(30);
-
-        context.Handle(5);
-
-        context.Handle(6);
+        context.Handle(4);
+        context.Handle(22);
+        context.Handle(888);
+        context.Handle(15);
+        context.Handle(1);
     }
 }
-
 
 public class Context
 {
@@ -43,14 +33,17 @@ public class Context
     }
 }
 
+
 public interface IState
 {
     void Handle(int arg);
 }
 
+
 public class ConcreteStateA : IState
 {
     private Context _context;
+
     public ConcreteStateA(Context context)
     {
         _context = context;
@@ -58,27 +51,39 @@ public class ConcreteStateA : IState
 
     public void Handle(int arg)
     {
-        Debug.Log("ConcreteStateA.Handle" + arg);
-        if (arg > 10)
+        if (arg > 20)
         {
-            _context.SetState(new ConcreteStateB(_context));
+            Debug.LogError("===A切换至B===,当前参数：" + arg);
+            _context.SetState(new ConcreteStateB(_context)); //状态切换
         }
+        else
+        {
+            Debug.LogError("A处理：" + arg);
+        }
+
     }
 }
 
 public class ConcreteStateB : IState
 {
     private Context _context;
-    public ConcreteStateB(Context context)
+
+    public ConcreteStateB(Context context) 
     {
         _context = context;
     }
+
+
     public void Handle(int arg)
     {
-        Debug.Log("ConcreteStateB.Handle" + arg);
-        if (arg <= 10)
+        if (arg < 20)
         {
-            _context.SetState(new ConcreteStateA(_context));
+            Debug.LogError("===B切换至A===,当前参数：" + arg);
+            _context.SetState(new ConcreteStateA(_context)); //状态切换
+        }
+        else
+        {
+            Debug.LogError("B处理：" + arg);
         }
     }
 }
