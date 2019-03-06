@@ -6,12 +6,17 @@ public class ISceneState
 {
     private string _sceneName;
 
-    private SceneStateController _controller;
+    protected SceneStateController _controller;
 
     public ISceneState(string sceneName,SceneStateController controller)
     {
         _sceneName = sceneName;
         _controller = controller;
+    }
+
+    public string SceneName
+    {
+        get { return _sceneName; }
     }
 
     public virtual void StateStart()

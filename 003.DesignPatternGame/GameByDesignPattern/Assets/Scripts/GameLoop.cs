@@ -15,7 +15,7 @@ public class GameLoop : MonoBehaviour
     void Start ()
     {
         _stateController = new SceneStateController();
-
+        _stateController.SetState(new StartState(_stateController),false);
     }
 	
 	// Update is called once per frame
